@@ -1,0 +1,267 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/AccelerometerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Accelerometer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/AccLateralLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AccelerometerTitle"
+        android:layout_alignRight="@+id/AccelerometerTitle"
+        android:layout_below="@+id/AccelerometerTitle"
+        android:layout_marginTop="16dp"
+        android:text="Lateral" />
+
+    <TextView
+        android:id="@+id/AccLongitudinalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AccLateralLabel"
+        android:layout_alignRight="@+id/AccLateralLabel"
+        android:layout_below="@+id/AccLateralLabel"
+        android:text="Longitudinal" />
+
+    <TextView
+        android:id="@+id/AccVerticalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AccLongitudinalLabel"
+        android:layout_alignRight="@+id/AccLongitudinalLabel"
+        android:layout_below="@+id/AccLongitudinalLabel"
+        android:text="Vertical" />
+
+    <TextView
+        android:id="@+id/AccLateralValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AccLateralLabel"
+        android:layout_alignBottom="@+id/AccLateralLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/AccLateralLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/AccLongitudinalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AccLongitudinalLabel"
+        android:layout_alignBottom="@+id/AccLongitudinalLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/AccLongitudinalLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/AccVerticalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AccVerticalLabel"
+        android:layout_alignBottom="@+id/AccVerticalLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/AccVerticalLabel"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/GryroscopeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AccVerticalLabel"
+        android:layout_below="@+id/AccVerticalLabel"
+        android:layout_marginTop="16dp"
+        android:text="Gyroscope"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/GyroXLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GryroscopeTitle"
+        android:layout_alignRight="@+id/GryroscopeTitle"
+        android:layout_below="@+id/GryroscopeTitle"
+        android:layout_marginTop="16dp"
+        android:text="Azimut" />
+	
+    <TextView
+        android:id="@+id/GyroYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GyroXLabel"
+        android:layout_alignRight="@+id/GyroXLabel"
+        android:layout_below="@+id/GyroXLabel"
+        android:text="Tangage" />
+    
+    <TextView
+        android:id="@+id/GyroZLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GyroYLabel"
+        android:layout_alignRight="@+id/GyroYLabel"
+        android:layout_below="@+id/GyroYLabel"
+        android:text="Roulis" />
+    
+    <TextView
+        android:id="@+id/GyroXValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GyroXLabel"
+        android:layout_alignBottom="@+id/GyroXLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/GyroXLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/GyroYValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GyroYLabel"
+        android:layout_alignBottom="@+id/GyroYLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/GyroYLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/GyroZValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GyroZLabel"
+        android:layout_alignBottom="@+id/GyroZLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/GyroZLabel"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/MagnetoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GyroZLabel"
+        android:layout_below="@+id/GyroZLabel"
+        android:layout_marginTop="16dp"
+        android:text="Magnetometer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/MagnetoXLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MagnetoTitle"
+        android:layout_alignRight="@+id/MagnetoTitle"
+        android:layout_below="@+id/MagnetoTitle"
+        android:layout_marginTop="16dp"
+        android:text="Field X" />
+	
+    <TextView
+        android:id="@+id/MagnetoYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MagnetoXLabel"
+        android:layout_alignRight="@+id/MagnetoXLabel"
+        android:layout_below="@+id/MagnetoXLabel"
+        android:text="Field Y" />
+    
+    <TextView
+        android:id="@+id/MagnetoZLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MagnetoYLabel"
+        android:layout_alignRight="@+id/MagnetoYLabel"
+        android:layout_below="@+id/MagnetoYLabel"
+        android:text="Field Z" />
+    
+    <TextView
+        android:id="@+id/MagnetoXValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MagnetoXLabel"
+        android:layout_alignBottom="@+id/MagnetoXLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/MagnetoXLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/MagnetoYValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MagnetoYLabel"
+        android:layout_alignBottom="@+id/MagnetoYLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/MagnetoYLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/MagnetoZValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MagnetoZLabel"
+        android:layout_alignBottom="@+id/MagnetoZLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/MagnetoZLabel"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/PressureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MagnetoZLabel"
+        android:layout_below="@+id/MagnetoZLabel"
+        android:layout_marginTop="16dp"
+        android:text="Pressure"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/PressureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PressureTitle"
+        android:layout_alignRight="@+id/PressureTitle"
+        android:layout_below="@+id/PressureTitle"
+        android:layout_marginTop="16dp"
+        android:text="Pressure" />
+    
+    <TextView
+        android:id="@+id/PressureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PressureLabel"
+        android:layout_alignBottom="@+id/PressureLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/PressureLabel"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/StartStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PressureLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:onClick="startStopRecording"
+        android:text="Start Recording" />
+
+    <Button
+        android:id="@+id/DeleteButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StartStopButton"
+        android:layout_alignBottom="@+id/StartStopButton"
+        android:layout_alignRight="@+id/PressureValue"
+        android:onClick="deleteRecording"
+        android:text="Delete" />
+    
+</RelativeLayout>
